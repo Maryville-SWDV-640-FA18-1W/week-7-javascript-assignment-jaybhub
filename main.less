@@ -1,0 +1,128 @@
+// Variables
+
+@green: rgb(58, 94, 46);
+@opaqueGreen: rgba(58, 94, 46, 0.5);
+@lightGreen: rgb(225, 230, 220);
+@orange:rgb(209, 114, 0);
+@purple: rgb(35, 6, 66);
+@red: rgb(130, 23, 0);
+@nearBlack:rgb(18, 18, 18);
+
+// Mix ins
+.standard-button {
+    background-color: @orange;
+    border-radius: 5px;
+    padding: 10px;
+    color: @lightGreen;
+}
+
+.text-background {
+    background-color: @opaqueGreen;
+    border-radius: 10px;
+}
+
+.inputLabel {
+    color: rgb(37, 25, 126);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input.inputField {
+    padding: 5px;
+    border: 1px solid rgb(35, 6, 66);
+}
+
+// CSS
+
+body {
+    padding-top:50px;
+    padding-bottom: 10px;
+    font-family: 'Imprima', sans-serif;
+    color: @nearBlack;
+    background-color: whitesmoke;
+    background-image: url(images/farm_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        font-family: 'Noto Serif', serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: @nearBlack;
+    }
+
+    #main-grid {
+        padding: 20px;
+        padding-bottom: 50px;
+        
+        #empty {
+            min-height: 24vh;
+        }
+
+        .text-standout {
+            color: @nearBlack;
+            padding: 5px;
+            font-size: large;
+        }
+
+        #col-photo-link {
+            padding-top: 15px;
+        }
+
+        figure {
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            img {
+                max-height: 250px;
+                max-width: 250px;
+            }
+
+            figcaption {
+                    text-align: center;
+                    .text-background;
+                }
+        }
+
+        .button-link {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .standard-button;
+        }
+       
+    .in-season {
+
+        h1 {
+            color: @green;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: large;
+            margin-bottom: -15px;
+        }
+
+        p {
+            color: @purple;
+            margin-bottom: -10px;
+        }
+
+        img {
+            max-height: 250px;
+            max-width: 250px;
+        }
+
+        button {
+            .standard-button
+        }
+    }
+}
+
+footer {
+
+    span {
+        padding-right: 15px;
+    }
+}
+
+}
